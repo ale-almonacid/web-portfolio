@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router"
 //Pages
 import HomePage from "./pages/HomePage"
 import AboutMePage from "./pages/AboutMePage"
-import NotFoundPage from "./pages/NotfoundPage"
+import NotFoundPage from "./pages/NotFoundPage"
 
 export function App() {
   return (
