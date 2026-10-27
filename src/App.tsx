@@ -1,20 +1,23 @@
+import { Routes, Route } from "react-router"
 
+//Pages
+import HomePage from "./pages/HomePage"
+import AboutMePage from "./pages/AboutMePage"
+import NotFoundPage from "./pages/NotfoundPage"
 
 export function App() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium text-xl">Design Portfolio</h1>
-          <p>Alejandra Almonacid</p>
-          
-          
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (in construction)
-        </div>
-      </div>
-    </div>
+    <Routes>
+
+       <Route path="/" element={<HomePage />} />
+       <Route path="/about-me" element={<AboutMePage />} />
+      
+
+      {/* 404 Route */}
+      <Route path="*" element={<NotFoundPage />} />
+
+
+    </Routes>
   )
 }
 
