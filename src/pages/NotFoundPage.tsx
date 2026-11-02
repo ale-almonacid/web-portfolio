@@ -2,7 +2,10 @@
 
 function NotFoundPage() {
   return (
-    <div>NotFoundPage</div>
+     <div id="Page container" className="max-w-6xl mx-auto">
+      
+      <p>Not Found page</p>
+      </div>
   )
 }
 

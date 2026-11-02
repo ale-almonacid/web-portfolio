@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar"
+
 import Linkedin from "@/assets/linkedin.svg"
 import Github from "@/assets/github.svg"
 import Behance from "@/assets/behance.svg"
@@ -6,13 +6,16 @@ import Behance from "@/assets/behance.svg"
 import { NavLink } from "react-router"
 import { ArrowUpRight } from "lucide-react"
 
+import Navbar from "@/components/Navbar"
+import CardCTA from "@/components/CardCTA"
+
 function HomePage() {
   return (
      <div id="Page container" className="max-w-6xl mx-auto">
      
       <Navbar/>
       {/* Hero */}
-        <section id="hero" className="pt-20 pb-24">
+        <section id="hero" className="pt-20 pb-24 ">
           <h1 className="max-w-2xl text-4xl leading-tight font-normal text-foreground tracking-[-.04em]">
             Product Designer · Design Engineer building products with purpose
             and sweat over <span className="text-brand">details</span>
@@ -27,6 +30,22 @@ function HomePage() {
 
         {/* cta-section */}
       <section id="cta-section">
+
+        <div className="mt-10 grid gap-10 md:grid-cols-2 px-24">
+        <CardCTA
+    eyebrow="View About Me"
+    title="Read my story"
+    description="Hi! Colombian product designer in Berlin, trained in Milan. 5+ years designing fintech and mobile products at startups, now also building them in React."
+    tags="Product design · Design systems · Front-end (React)"
+    to="/about-me"
+  />
+    <CardCTA
+    eyebrow="View Me After Work"
+    title="Outside of the screen"
+    description="..."
+    to="/about-me#outside"
+  />
+</div>
 
       </section>
 
