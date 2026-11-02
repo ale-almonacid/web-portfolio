@@ -1,19 +1,62 @@
+import Navbar from "@/components/Navbar"
+import Linkedin from "@/assets/linkedin.svg"
+import Github from "@/assets/github.svg"
+import Behance from "@/assets/behance.svg"
 
+import { NavLink } from "react-router"
+import { ArrowUpRight } from "lucide-react"
 
 function HomePage() {
   return (
-     <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
+     <div id="Page container" className="max-w-6xl mx-auto">
+     
+      <Navbar/>
+      {/* Hero */}
+        <section id="hero" className="pt-20 pb-24">
+          <h1 className="max-w-2xl text-4xl leading-tight font-normal text-foreground tracking-[-.04em]">
+            Product Designer · Design Engineer building products with purpose
+            and sweat over <span className="text-brand">details</span>
+          </h1>
+          <NavLink
+            to="/about-me"
+            className="mt-4 inline-flex items-center gap-1  text-brand hover:underline"
+          >
+            More about me <ArrowUpRight className="size-4" />
+          </NavLink>
+        </section>
+
+        {/* cta-section */}
+      <section id="cta-section">
+
+      </section>
+
+
+      {/* Footer */}
+      <footer className="mt-24 flex items-end justify-between border-t border-border py-10">
         <div>
-          <h1 className="font-medium text-xl">Design Portfolio</h1>
-          <p>Alejandra Almonacid</p>
-          
-          
+          <p className="text-foreground">Alejandra Almonacid</p>
+          <a
+            href="mailto:alejandraalmonacidayala@gmail.com"
+            className="text-sm text-muted-foreground hover:text-foreground"
+          >
+            alejandraalmonacidayala@gmail.com
+          </a>
         </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (in construction)
+        <div className="flex flex-col items-end gap-2">
+          <div className="flex items-center gap-3 text-foreground">
+            <a href="https://www.linkedin.com/in/alejandraalmonacid/" aria-label="LinkedIn" target="_blank">
+              <img src={Linkedin} alt="" />
+            </a>
+            <a href="https://github.com/ale-almonacid" aria-label="GitHub" target="_blank">
+              <img src={Github} alt="" />
+            </a>
+            <a href="https://www.behance.net/alejandraalmonacid" aria-label="Behance" target="_blank" className="font-bold">
+              <img src={Behance} alt="" />
+            </a>
+          </div>
+          <p className="text-sm text-muted-foreground">©2026</p>
         </div>
-      </div>
+      </footer>
     </div>
   )
 }
