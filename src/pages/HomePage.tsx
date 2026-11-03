@@ -8,6 +8,8 @@ import { ArrowUpRight } from "lucide-react"
 
 import Navbar from "@/components/Navbar"
 import CardCTA from "@/components/CardCTA"
+import { projects } from "@/data/projects"
+import ProjectCardDesktop from "@/components/ProjectCardDesktop"
 
 function HomePage() {
   return (
@@ -27,6 +29,17 @@ function HomePage() {
             More about me <ArrowUpRight className="size-4" />
           </NavLink>
         </section>
+
+        {/* project section */}
+        <section>
+            <div className="mt-10 flex flex-col gap-8">
+  {projects.map((project) => (
+    <ProjectCardDesktop key={project.slug} project={project} />
+  ))}
+</div>
+        </section>
+
+
 
         {/* cta-section */}
       <section id="cta-section">
