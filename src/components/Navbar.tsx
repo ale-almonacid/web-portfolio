@@ -7,7 +7,7 @@ const linkClass = ({ isActive }: { isActive: boolean }) =>
 
 function Navbar() {
   return (
-    <div className="flex flex-row justify-between py-4 items-center">
+    <div className="flex flex-row justify-between py-4 items-center  mx-auto px-36 max-w-[1920px]">
         <header className="text-foreground items-center">Alejandra Almonacid</header>
         <div className="flex flex-row gap-2">
            <NavLink to="/" end className={linkClass}>Portfolio</NavLink>

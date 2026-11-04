@@ -8,6 +8,9 @@
 /* 1. Primitives */
 @theme {
 
+  /* large breakpoint */
+  --breakpoint-3xl: 120rem; /* 1920px */
+
   /* typography */
   --tracking-default: -0.02em;
 

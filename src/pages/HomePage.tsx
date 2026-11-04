@@ -13,11 +13,11 @@ import ProjectCardDesktop from "@/components/ProjectCardDesktop"
 
 function HomePage() {
   return (
-     <div id="Page container" className="max-w-6xl mx-auto">
+     <div id="Page container" className="">
      
       <Navbar/>
       {/* Hero */}
-        <section id="hero" className="pt-20 pb-24 ">
+        <section id="hero" className="pt-20 pb-24 px-36 mx-auto max-w-[1920px]">
           <h1 className="max-w-2xl text-4xl leading-tight font-normal text-foreground tracking-[-.04em]">
             Product Designer · Design Engineer building products with purpose
             and sweat over <span className="text-brand">details</span>
@@ -42,9 +42,9 @@ function HomePage() {
 
 
         {/* cta-section */}
-      <section id="cta-section">
+      <section id="cta-section" className="mx-auto py-28 px-36 max-w-[1920px]">
 
-        <div className="mt-10 grid gap-10 md:grid-cols-2 px-24">
+        <div className="grid gap-10 md:grid-cols-2 px-24">
         <CardCTA
     eyebrow="View About Me"
     title="Read my story"
@@ -64,7 +64,12 @@ function HomePage() {
 
 
       {/* Footer */}
-      <footer className="mt-24 flex items-end justify-between border-t border-border py-10">
+      <footer className="  mx-auto max-w-[1920px]">
+
+        <div className="flex items-end justify-between mx-36 py-10 px-8 border-t border-border">
+
+        
+
         <div>
           <p className="text-foreground">Alejandra Almonacid</p>
           <a
@@ -88,6 +93,9 @@ function HomePage() {
           </div>
           <p className="text-sm text-muted-foreground">©2026</p>
         </div>
+
+        </div>
+
       </footer>
     </div>
   )

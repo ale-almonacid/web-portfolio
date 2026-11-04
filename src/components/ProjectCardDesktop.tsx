@@ -5,8 +5,14 @@ type Props = { project: Project }
 
 function ProjectCardDesktop({ project }: Props) {
   return (
-     <article className="grid grid-cols-3 gap-10 bg-card p-10 style={project.bgImage ? { backgroundImage: `url(${project.bgImage})` } : undefined}">
-      <div className="flex flex-col p-6 gap-8 bg-white rounded-md">
+    <div className="bg-cover bg-center mx-auto w-full max-w-[1632px]" style={project.bgImage ? { backgroundImage: `url(${project.bgImage})` } : undefined}>
+
+     <article
+      className="grid grid-cols-[1.8fr_3fr] gap-10 py-14 px-36  mx-auto"
+      
+    >
+
+        <div className="flex flex-col p-6 gap-8 bg-white rounded-md">
         <div>
 
         <h3 className="text-2xl tracking-[-.03em]">{project.title}</h3>
@@ -59,6 +65,7 @@ function ProjectCardDesktop({ project }: Props) {
       </div>
       {/* image: an img tag with src={project.image} alt={project.title} className="rounded-lg object-cover" */}
     </article>
+    </div>
   )
 }
 
