@@ -1,9 +1,6 @@
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 
-import Linkedin from "@/assets/linkedin.svg"
-import Github from "@/assets/github.svg"
-import Behance from "@/assets/behance.svg"
 
 function AboutMePage() {
   return (
