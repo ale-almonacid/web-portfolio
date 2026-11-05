@@ -17,7 +17,9 @@ function HomePage() {
      
       <Navbar/>
       {/* Hero */}
-        <section id="hero" className="pt-20 pb-24 px-36 mx-auto max-w-[1920px]">
+        <section id="hero" className="flex flex-col justify-between pt-20 pb-5 px-36 mx-auto max-w-[1920px]">
+
+            <div className="pb-24">
           <h1 className="max-w-2xl text-4xl leading-tight font-normal text-foreground tracking-[-.04em]">
             Product Designer · Design Engineer building products with purpose
             and sweat over <span className="text-brand">details</span>
@@ -28,11 +30,15 @@ function HomePage() {
           >
             More about me <ArrowUpRight className="size-4" />
           </NavLink>
+
+            </div>
+
+          <p className="text-brand tracking-[0.25em] uppercase">Selected Work</p>
         </section>
 
         {/* project section */}
         <section>
-            <div className="mt-10 flex flex-col gap-8">
+            <div className=" flex flex-col gap-8">
   {projects.map((project) => (
     <ProjectCardDesktop key={project.slug} project={project} />
   ))}
@@ -67,8 +73,6 @@ function HomePage() {
       <footer className="  mx-auto max-w-[1920px]">
 
         <div className="flex items-end justify-between mx-36 py-10 px-8 border-t border-border">
-
-        
 
         <div>
           <p className="text-foreground">Alejandra Almonacid</p>
