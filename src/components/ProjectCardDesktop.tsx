@@ -1,5 +1,6 @@
 import { NavLink } from "react-router"
 import type { Project } from "@/data/projects"
+import Tag from "@/components/Tag"
 
 type Props = { project: Project }
 
@@ -13,10 +14,13 @@ function ProjectCardDesktop({ project }: Props) {
     >
 
         <div className="flex flex-col p-6 gap-8 bg-white rounded-md">
-        <div>
+        <div className="flex flex-col gap-0.5">
 
         <h3 className="text-2xl tracking-[-.03em]">{project.title}</h3>
-        <p className="mt-1 text-sm text-muted-foreground">{project.subtitle}</p>
+        <p className="text-sm text-muted-foreground">{project.subtitle}</p>
+        <div className="flex flex-wrap gap-2 pt-2.5">
+        {project.tags?.map((t) => <Tag key={t} name={t} />)}
+        </div>
         </div>
 
         <p className="text-sm text-foreground">{project.summary}</p>

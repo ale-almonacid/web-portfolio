@@ -1,3 +1,4 @@
+import type { TagName } from "@/data/tags"
 
 import bg1 from "@/assets/bg/bg-1.png"
 import bg2 from "@/assets/bg/bg-2.png"
@@ -12,8 +13,8 @@ export type Project = {
   role: string
   tools: string[]
   image: string         // put images in /public/projects/
-  bgImage?:string
-  tag?: string          // e.g. "Personal project"
+  bgImage?:string       // e.g. "Personal project"
+  tags?: TagName[]         // tags
 }
 
 export const projects: Project[] = [
@@ -27,6 +28,7 @@ export const projects: Project[] = [
     tools: ["Figma", "Zeplin", "Jira", "Adobe"],
     image:"/projects/devsectool.png",
     bgImage: bg1,
+    tags: ["B2B SaaS", "Design System", "0→1", "Fintech & Compliance"],
   },
   {
     slug: "better-life",
@@ -38,6 +40,7 @@ export const projects: Project[] = [
     tools: ["Figma", "Figma Make", "Claude"],
     image: "/projects/better-life.png",
     bgImage: bg2,
+    tags: ["Mobile-first", "Cross-platform (iOS / Android / Web)", "0→1"],
   },
   {
     slug: "itinote",
@@ -49,6 +52,6 @@ export const projects: Project[] = [
     tools: ["Figma", "React (javaScript)", "Shadcn/ui, Tailwind, Storybook"],
     image: "/projects/itinote.png",
     bgImage: bg3,
-    tag: "",
+    tags: ["Design Engineering", "Design tokens", "React", "Storybook"],
   },
 ]
