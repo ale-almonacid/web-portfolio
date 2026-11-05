@@ -8,7 +8,7 @@ function ProjectCardDesktop({ project }: Props) {
     <div className="bg-cover bg-center mx-auto w-full max-w-[1632px]" style={project.bgImage ? { backgroundImage: `url(${project.bgImage})` } : undefined}>
 
      <article
-      className="grid grid-cols-[1.8fr_3fr] gap-10 py-14 px-36  mx-auto"
+      className="grid grid-cols-[1.8fr_3fr] gap-10 py-20 px-36  mx-auto"
       
     >
 
