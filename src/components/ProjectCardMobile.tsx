@@ -14,15 +14,17 @@ function ProjectCardMobile({ project }: Props) {
 
     <article 
     >
-        <div id="container-image" className="bg-cover bg-center mx-auto w-full h-[619px]" style={project.bgImageMobile ? { backgroundImage: `url(${project.bgImageMobile})` } : undefined}
+        <div id="container-bgimage"
+  className={`mx-auto h-[619px] flex flex-col w-full bg-cover bg-center ${project.darkBg ? "dark" : ""}`}
+  style={project.bgImageMobile ? { backgroundImage: `url(${project.bgImageMobile})` } : undefined}
       >
         <div id="header" className="flex flex-col gap-0.5 px-[5vw] py-4">
 
-            <div className="flex flex-row justify-between items-start">
+            <div className="flex flex-row gap-2 justify-between items-start">
 
-                <div className="flex flex-col gap-1">
-                <h3 className="text-xl tracking-[-.03em]">{project.title}</h3>
-                <p className="text-sm text-muted-foreground">{project.subtitle}</p>
+                <div className="flex flex-col gap-0.5">
+                <h3 className="text-xl text-foreground tracking-[-.03em]">{project.title}</h3>
+                <p className="text-sm text-foreground/90">{project.subtitle}</p>
                 </div>
 
 
@@ -45,7 +47,11 @@ function ProjectCardMobile({ project }: Props) {
         
         </div>
 
-        <img id="screens" src="" alt="" />
+
+        <div id="ui-image-container" className="pt-5 flex-1 min-h-0 overflow-hidden pl-[10vw] md:px-[10vw]">
+        <img id="screens" className="block ml-auto h-full w-auto max-w-none md:mx-auto md:max-w-full md:object-contain" src={project.uiImageMobile} alt="" />
+        </div>
+
         </div>
 
 
@@ -64,7 +70,7 @@ function ProjectCardMobile({ project }: Props) {
                 </div>
 
                 <div className="flex flex-row gap-1 items-center">
-                    <UserPen size={"18px"}></UserPen>
+                    <UserPen size={"17px"}></UserPen>
                 <p className="text-sm text-foreground font-medium
 ">
                 {project.roleMobile} 

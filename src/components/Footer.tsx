@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className=" mx-auto max-w-[1920px]">
 
-        <div className="flex items-end justify-between py-10 px-8 border-t border-border mx-[5vw] xl:mx-36">
+        <div className="flex flex-col gap-6 justify-between py-10 px-8 border-t border-border mx-[5vw] md:flex-row xl:mx-36">
 
         <div>
           <p className="text-foreground">Alejandra Almonacid</p>
@@ -17,7 +17,7 @@ function Footer() {
             alejandraalmonacidayala@gmail.com
           </a>
         </div>
-        <div className="flex flex-col items-end gap-2">
+        <div className="flex flex-row justify-between md:flex-col items-end gap-2">
           <div className="flex items-center gap-3 text-foreground">
             <a href="https://www.linkedin.com/in/alejandraalmonacid/" aria-label="LinkedIn" target="_blank">
               <img src={Linkedin} alt="" />
