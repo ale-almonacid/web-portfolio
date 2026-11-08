@@ -1,8 +1,9 @@
 import { NavLink } from "react-router"
 import type { Project } from "@/data/projects"
 import Tag from "@/components/Tag"
+import TechStackDrawer from "./TechStackDrawer"
 
-import { Button } from "./ui/button"
+
 import {Clock5} from "lucide-react"
 import {UserPen} from "lucide-react"
 import { ArrowUpRight } from "lucide-react"
@@ -78,8 +79,8 @@ function ProjectCardMobile({ project }: Props) {
                 </div>
                 </div>
 
-                <Button variant="outline" size={"sm"}>Tech Stack</Button>
-                
+    
+                <TechStackDrawer toolList={project.toolsMobile}></TechStackDrawer>
                 
             </div>
 

@@ -1,4 +1,5 @@
 import type { TagName } from "@/data/tags"
+import type {ToolName} from "@/data/tools"
 
 // Desktop
 import bg1 from "@/assets/bg/bg-1.png"
@@ -26,6 +27,7 @@ export type Project = {
   role: string              // desktop
   roleMobile: string
   tools: string[]
+  toolsMobile: ToolName[]
   bgImage?:string           // Desktop
   bgImageMobile?: string 
   uiImageMobile?: string       
@@ -44,6 +46,7 @@ export const projects: Project[] = [
     role: "Founding Product Designer",
     roleMobile: "Product Designer",
     tools: ["Figma", "Zeplin", "Jira", "Adobe"],
+    toolsMobile: ["Figma", "Zeplin", "Jira", "Illustrator", "Photoshop", "InDesign"],
     bgImage: bg1,
     bgImageMobile: bgMobile1,
     uiImageMobile: uiMobile1,
@@ -60,6 +63,7 @@ export const projects: Project[] = [
     role: "Founding Product Designer (part-time)",
     roleMobile: "Product Designer",
     tools: ["Figma", "Figma Make", "Claude"],
+    toolsMobile: ["Figma", "Figma Make", "Claude"],
     bgImage: bg2,
     bgImageMobile: bgMobile2,
     uiImageMobile: uiMobile2,
@@ -76,6 +80,7 @@ export const projects: Project[] = [
     role: "Product Designer & Front-end Developer (solo) ",
     roleMobile: "Design Engineer",
     tools: ["Figma", "React (javaScript)", "Shadcn/ui, Tailwind, Storybook"],
+    toolsMobile: ["Figma", "React", "JavaScript", "Tailwind", "Shadcn", "Storybook"],
     bgImage: bg3,
     bgImageMobile: bgMobile3,
     uiImageMobile: uiMobile3,
