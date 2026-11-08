@@ -78,7 +78,7 @@ function ProjectCardMobile({ project }: Props) {
                 </div>
                 </div>
 
-                <Button variant={"secondary"} size={"sm"}>Tech Stack</Button>
+                <Button variant="outline" size={"sm"}>Tech Stack</Button>
                 
                 
             </div>

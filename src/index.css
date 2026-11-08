@@ -119,7 +119,7 @@
   --card-foreground: var(--color-bluegray-50);
   --popover: var(--color-bluegray-900);
   --popover-foreground: var(--color-bluegray-50);
-  --primary: var(--color-bluegray-100);
+  --primary: var(--color-white);
   --primary-foreground: var(--color-bluegray-900);
   --secondary: var(--color-bluegray-800);
   --secondary-foreground: var(--color-bluegray-50);
