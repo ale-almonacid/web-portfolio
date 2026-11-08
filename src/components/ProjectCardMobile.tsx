@@ -40,7 +40,7 @@ function ProjectCardMobile({ project }: Props) {
             </div>
 
         
-            <div className="flex flex-wrap  gap-1 md:gap-2 pt-2.5">
+            <div className="flex flex-wrap  gap-[5px] md:gap-2 pt-2.5">
             {project.tags?.map((t) => <Tag key={t} name={t} />)}
             </div>
 
