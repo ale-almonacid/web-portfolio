@@ -54,7 +54,7 @@ function HomePage() {
 
 
         {/* cta-section */}
-      <section id="cta-section" className="mx-auto py-28 px-[5vw] lx:px-36 max-w-[1920px]">
+      <section id="cta-section" className="mx-auto pt-14 pb-24 lx:py-28 px-[5vw] lx:px-36 max-w-[1920px]">
 
         <div className="grid gap-10 md:grid-cols-2 px-[5vw] xl:px-24">
         <CardCTA
