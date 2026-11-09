@@ -80,7 +80,7 @@ function ProjectCardMobile({ project }: Props) {
                 </div>
 
     
-                <TechStackDrawer toolList={project.toolsMobile}></TechStackDrawer>
+                <TechStackDrawer toolList={project.toolsMobile} slug={project.slug}></TechStackDrawer>
                 
             </div>
 
