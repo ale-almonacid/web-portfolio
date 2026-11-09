@@ -40,7 +40,7 @@ function TechStackDrawer({slug, toolList }: Props) {
           {toolList.map((name) => (
             <div key={name} className="flex flex-col items-center gap-2">
              
-                <img src={tools[name]} alt="" className="size-16 drop-shadow-2xl"></img> 
+                <img src={tools[name]} alt="" className="size-14 drop-shadow-2xl"></img> 
               
               <span className="text-sm text-muted-foreground">{name}</span>
             </div>
