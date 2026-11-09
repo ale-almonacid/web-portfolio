@@ -63,7 +63,7 @@ export const projects: Project[] = [
     role: "Founding Product Designer (part-time)",
     roleMobile: "Product Designer",
     tools: ["Figma", "Figma Make", "Claude"],
-    toolsMobile: ["Figma", "Figma Make", "Claude"],
+    toolsMobile: ["Figma", "Figma Make", "Claude","Illustrator", "Photoshop", "InDesign"],
     bgImage: bg2,
     bgImageMobile: bgMobile2,
     uiImageMobile: uiMobile2,

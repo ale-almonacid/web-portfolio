@@ -38,7 +38,7 @@ function TechStackDrawer({ toolList }: Props) {
         </div>
 
         <DrawerFooter>
-          <DrawerClose render={<Button>Close</Button>} />
+          <DrawerClose render={<Button size={"lg"}>Close</Button>} />
         </DrawerFooter>
       </DrawerContent>
     </Drawer>
