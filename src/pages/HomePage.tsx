@@ -45,9 +45,7 @@ function HomePage() {
                     <div className="xl:hidden"><ProjectCardMobile project={project} /></div>
                 </div>
                 ))}
-            {/* {projects.map((project) => (
-                <ProjectCardDesktop key={project.slug} project={project} />
-            ))} */}
+            
             </div>
         </section>
 

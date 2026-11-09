@@ -18,7 +18,7 @@ function Footer() {
           </a>
         </div>
         <div className="flex flex-row justify-between md:flex-col items-end gap-2">
-          <div className="flex items-center gap-3 text-foreground">
+          <div className="flex items-center gap-3.5 text-foreground">
             <a href="https://www.linkedin.com/in/alejandraalmonacid/" aria-label="LinkedIn" target="_blank">
               <img src={Linkedin} alt="" />
             </a>
