@@ -10,8 +10,12 @@ import DevSecToolPage from "./pages/projects/DevSecToolPage"
 import BetterLifePage from "./pages/projects/BetterLifePage"
 import ItinotePage from "./pages/projects/ItinotePage"
 
-export function App() {
+//Analytics 
+import { Analytics } from "@vercel/analytics/react"
+
+function App() {
   return (
+    <>
     <Routes>
 
        <Route path="/" element={<HomePage />} />
@@ -27,6 +31,8 @@ export function App() {
 
 
     </Routes>
+    <Analytics />
+    </>
   )
 }
 
