@@ -5,6 +5,35 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* 1. Primitives */
+@theme {
+
+  /* large breakpoint */
+  --breakpoint-3xl: 120rem; /* 1920px */
+
+  /* typography */
+  --tracking-default: -0.02em;
+
+  /* base */
+  --color-white: #FFFFFF ;
+  --color-black: #000000;
+
+  /* bluegray - brand */
+  --color-bluegray-50: #F2F5F7;
+  --color-bluegray-100: #E4EBF0;
+  --color-bluegray-200: #C9D7E1;
+  --color-bluegray-300: #AFC4D1;
+  --color-bluegray-400: #94B0C2;
+  --color-bluegray-500: #799CB3;
+  --color-bluegray-600: #617D8F;
+  --color-bluegray-700: #495E6B;
+  --color-bluegray-800: #303E48;
+  --color-bluegray-900: #181F24;
+  --color-bluegray-950: #0C1012;
+}
+
+/* 3. Semantic -> Tailwind classes */
+
 @theme inline {
     --font-heading: var(--font-sans);
     --font-sans: 'Inter Variable', sans-serif;
@@ -33,6 +62,7 @@
     --color-secondary: var(--secondary);
     --color-primary-foreground: var(--primary-foreground);
     --color-primary: var(--primary);
+    --color-brand: var(--brand);
     --color-popover-foreground: var(--popover-foreground);
     --color-popover: var(--popover);
     --color-card-foreground: var(--card-foreground);
@@ -48,73 +78,60 @@
     --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+/* 2. Semantic tokens */
 :root {
-    --background: oklch(1 0 0);
-    --foreground: oklch(0.148 0.004 228.8);
-    --card: oklch(1 0 0);
-    --card-foreground: oklch(0.148 0.004 228.8);
-    --popover: oklch(1 0 0);
-    --popover-foreground: oklch(0.148 0.004 228.8);
-    --primary: oklch(0.218 0.008 223.9);
-    --primary-foreground: oklch(0.987 0.002 197.1);
-    --secondary: oklch(0.963 0.002 197.1);
-    --secondary-foreground: oklch(0.218 0.008 223.9);
-    --muted: oklch(0.963 0.002 197.1);
-    --muted-foreground: oklch(0.56 0.021 213.5);
-    --accent: oklch(0.963 0.002 197.1);
-    --accent-foreground: oklch(0.218 0.008 223.9);
-    --destructive: oklch(0.577 0.245 27.325);
-    --border: oklch(0.925 0.005 214.3);
-    --input: oklch(0.925 0.005 214.3);
-    --ring: oklch(0.723 0.014 214.4);
-    --chart-1: oklch(0.872 0.007 219.6);
-    --chart-2: oklch(0.56 0.021 213.5);
-    --chart-3: oklch(0.45 0.017 213.2);
-    --chart-4: oklch(0.378 0.015 216);
-    --chart-5: oklch(0.275 0.011 216.9);
-    --radius: 0.625rem;
-    --sidebar: oklch(0.987 0.002 197.1);
-    --sidebar-foreground: oklch(0.148 0.004 228.8);
-    --sidebar-primary: oklch(0.218 0.008 223.9);
-    --sidebar-primary-foreground: oklch(0.987 0.002 197.1);
-    --sidebar-accent: oklch(0.963 0.002 197.1);
-    --sidebar-accent-foreground: oklch(0.218 0.008 223.9);
-    --sidebar-border: oklch(0.925 0.005 214.3);
-    --sidebar-ring: oklch(0.723 0.014 214.4);
+
+   /* ---------- TEXT ---------- */
+  --foreground: var(--color-bluegray-950);         /* text/primary */
+  --muted-foreground: var(--color-bluegray-700);   /* text/secondary */
+  --brand: var(--color-bluegray-500);              /* text/accent */
+  --primary-foreground: var(--color-white);        /* text/on-primary */
+
+  /* ---------- SURFACE ---------- */
+  --background: var(--color-white);                /* surface/page */
+  --primary: var(--color-bluegray-950);            /* surface/primary */
+  --secondary: var(--color-bluegray-100);          /* surface/secondary */
+  --card: var(--color-bluegray-50);                /* surface/tertiary */
+
+  /* ---------- BORDER ---------- */
+  --border: var(--color-bluegray-200);             /* border/border */
+  --input: var(--color-bluegray-200);              /* border/input */
+  --ring: var(--color-bluegray-400);               /* border/focused *
+  
+
+  /* ---------- EXTRA (shadcn needs these, not in Figma) ---------- */
+  --card-foreground: var(--foreground);
+  --popover: var(--background);
+  --popover-foreground: var(--foreground);
+  --secondary-foreground: var(--foreground);
+  --muted: var(--card);
+  --accent: var(--secondary);                      /* hover surfaces */
+  --accent-foreground: var(--foreground);
+  --destructive: oklch(0.577 0.245 27.325);
+  --radius: 0.5rem;
 }
 
+
 .dark {
-    --background: oklch(0.148 0.004 228.8);
-    --foreground: oklch(0.987 0.002 197.1);
-    --card: oklch(0.218 0.008 223.9);
-    --card-foreground: oklch(0.987 0.002 197.1);
-    --popover: oklch(0.218 0.008 223.9);
-    --popover-foreground: oklch(0.987 0.002 197.1);
-    --primary: oklch(0.925 0.005 214.3);
-    --primary-foreground: oklch(0.218 0.008 223.9);
-    --secondary: oklch(0.275 0.011 216.9);
-    --secondary-foreground: oklch(0.987 0.002 197.1);
-    --muted: oklch(0.275 0.011 216.9);
-    --muted-foreground: oklch(0.723 0.014 214.4);
-    --accent: oklch(0.275 0.011 216.9);
-    --accent-foreground: oklch(0.987 0.002 197.1);
-    --destructive: oklch(0.704 0.191 22.216);
-    --border: oklch(1 0 0 / 10%);
-    --input: oklch(1 0 0 / 15%);
-    --ring: oklch(0.56 0.021 213.5);
-    --chart-1: oklch(0.872 0.007 219.6);
-    --chart-2: oklch(0.56 0.021 213.5);
-    --chart-3: oklch(0.45 0.017 213.2);
-    --chart-4: oklch(0.378 0.015 216);
-    --chart-5: oklch(0.275 0.011 216.9);
-    --sidebar: oklch(0.218 0.008 223.9);
-    --sidebar-foreground: oklch(0.987 0.002 197.1);
-    --sidebar-primary: oklch(0.488 0.243 264.376);
-    --sidebar-primary-foreground: oklch(0.987 0.002 197.1);
-    --sidebar-accent: oklch(0.275 0.011 216.9);
-    --sidebar-accent-foreground: oklch(0.987 0.002 197.1);
-    --sidebar-border: oklch(1 0 0 / 10%);
-    --sidebar-ring: oklch(0.56 0.021 213.5);
+  --background: var(--color-bluegray-950);
+  --foreground: var(--color-bluegray-50);
+  --card: var(--color-bluegray-900);
+  --card-foreground: var(--color-bluegray-50);
+  --popover: var(--color-bluegray-900);
+  --popover-foreground: var(--color-bluegray-50);
+  --primary: var(--color-white);
+  --primary-foreground: var(--color-bluegray-900);
+  --secondary: var(--color-bluegray-800);
+  --secondary-foreground: var(--color-bluegray-50);
+  --muted: var(--color-bluegray-800);
+  --muted-foreground: var(--color-bluegray-300);
+  --accent: var(--color-bluegray-800);
+  --accent-foreground: var(--color-bluegray-50);
+  --brand: var(--color-bluegray-400);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: var(--color-bluegray-800);
+  --input: var(--color-bluegray-800);
+  --ring: var(--color-bluegray-600);
 }
 
 @layer base {
@@ -123,6 +140,7 @@
     }
   body {
     @apply bg-background text-foreground;
+    letter-spacing: var(--tracking-default);
     }
   button:not(:disabled), [role="button"]:not(:disabled) {
     cursor: pointer;
