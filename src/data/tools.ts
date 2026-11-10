@@ -12,6 +12,15 @@ import tailwind from "@/assets/tech-stack/tailwind.svg"
 import shadcn from "@/assets/tech-stack/shadcn.svg"
 import storybook from "@/assets/tech-stack/storybook.svg"
 
+import webflow from "@/assets/tech-stack/webflow.svg"
+import adobecc from "@/assets/tech-stack/adobecc.svg"
+import lottiefiles from "@/assets/tech-stack/lottiefiles.svg"
+import github from "@/assets/tech-stack/gitlab.svg"
+import csshtml from "@/assets/tech-stack/css-html.svg"
+import mongodb from "@/assets/tech-stack/mongodb.svg"
+import postfresql from "@/assets/tech-stack/postfresql.svg"
+import typescript from "@/assets/tech-stack/typescript.svg"
+
 
 
 export const tools = {
@@ -27,7 +36,15 @@ export const tools = {
   JavaScript: javascript,
   Tailwind: tailwind,
   Shadcn: shadcn,
-  Storybook: storybook
+  Storybook: storybook,
+  Webflow: webflow,
+  "Adobe CC": adobecc,
+  LottieFiles: lottiefiles,
+  GitHub: github,
+  "HTML/CSS": csshtml,
+  MongoDB: mongodb,
+  Postgres: postfresql,
+  TypeScript: typescript,
 
 } as const
 
