@@ -52,7 +52,7 @@ function HomePage() {
 
 
         {/* cta-section */}
-      <section id="cta-section" className="mx-auto pt-14 pb-24 lx:py-28 px-[5vw] lx:px-36 max-w-[1920px]">
+      <section id="cta-section" className="mx-auto pt-14 pb-24 xl:py-28 px-[5vw] xl:px-36 max-w-[1920px]">
 
         <div className="grid gap-10 md:grid-cols-2 px-[5vw] xl:px-24">
         <CardCTA
@@ -63,10 +63,11 @@ function HomePage() {
     to="/about-me"
   />
     <CardCTA
-    eyebrow="View Me After Work"
-    title="Outside of the screen"
-    description="..."
-    to="/about-me#outside"
+    eyebrow="Designed & coded by me"
+    title="About this portfolio"
+    description="This site was fully designed and coded by me, with dedicated layouts and components for mobile, desktop and large screens. Not just responsive adaptations, but carefully crafted experiences for every screen size."
+    tags="Figma · React · TypeScript · Tailwind"
+    to="https://github.com/ale-almonacid/web-portfolio"
   />
 </div>
 

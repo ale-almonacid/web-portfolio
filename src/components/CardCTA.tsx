@@ -18,8 +18,8 @@ function CardCTA({ eyebrow, title, description, tags, to }: CardCTAProps) {
         <div>
 
       <p className="text-sm text-muted-foreground">{eyebrow}</p>
-      <h3 className="mt-1 text-3xl tracking-[-.03em]">{title}</h3>
-      <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+      <h3 className="mt-1 text-2xl md:text-3xl tracking-[-.03em]">{title}</h3>
+      <p className=" mt-3 md:mt-5 text-sm leading-relaxed text-muted-foreground">
         {description}
       </p>
       {tags && (
