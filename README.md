@@ -1,4 +1,4 @@
-# Alejandra Almonacid — Portfolio
+# Alejandra Almonacid Portfolio
 
 My personal portfolio as a Product Designer and Design Engineer. I designed it in Figma and built it myself in React, TypeScript and Tailwind CSS.
 
