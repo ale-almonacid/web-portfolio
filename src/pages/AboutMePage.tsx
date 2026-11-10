@@ -20,6 +20,11 @@ const skillGroups: { title: string; cols: string; tools: ToolName[] }[] = [
   { title: "Backend & Data", cols: "grid-cols-1", tools: ["MongoDB", "Postgres"] },
 ]
 
+const skillGroupsMobile: { title: string; tools: ToolName[] }[] = [
+  { title: "Design", tools: ["Figma", "Webflow", "LottieFiles", "Adobe CC"] },
+  { title: "Development", tools: ["JavaScript", "TypeScript", "React", "GitHub", "HTML/CSS", "Storybook", "MongoDB", "Postgres"] },
+]
+
 function AboutMePage() {
   return (
     <div id="Page container" className="">
@@ -28,9 +33,9 @@ function AboutMePage() {
       {/* Hero */}
       <section
         id="hero"
-        className="mx-auto flex max-w-[1920px] flex-col justify-between px-[5vw] pt-20 pb-1 lg:pb-5 xl:px-36"
+        className="mx-auto flex max-w-[1920px] flex-col justify-between px-[5vw] pt-8 lg:pt-20 lg:pb-5 xl:px-36"
       >
-        <div className="flex flex-col lg:flex-row gap-10 pb-24">
+        <div className="flex flex-col lg:flex-row gap-10  pb-18 lg:pb-24">
           <div
             id="profile-picture"
             role="img"
@@ -85,7 +90,21 @@ function AboutMePage() {
       {/* tech stack */}
       <section className="mx-auto flex max-w-[1920px] flex-col justify-between px-[5vw] pt-0 lg:pt-4 pb-30 xl:px-36">
 
-        <div className="grid gap-10 md:grid-cols-[2fr_3fr_2fr]">
+
+        {/* mobile */}
+<div className="flex flex-col gap-8 lg:hidden">
+  {skillGroupsMobile.map((group) => (
+    <div key={group.title} className="flex flex-col gap-4">
+      <h3 className="text-sm tracking-[0.3em] text-brand uppercase">{group.title}</h3>
+      <div className="grid grid-cols-4 gap-y-6 rounded-lg bg-card pt-6 pb-4 px-2">
+        {group.tools.map((t) => <ToolTile key={t} name={t} />)}
+      </div>
+    </div>
+  ))}
+</div>
+
+ {/* desktop */}
+        <div className="hidden gap-10 lg:grid lg:grid-cols-[2fr_3fr_2fr]">
 
        {skillGroups.map((group) => (
     <div key={group.title} className="flex flex-col gap-4">
