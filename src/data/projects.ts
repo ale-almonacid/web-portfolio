@@ -39,7 +39,7 @@ export const projects: Project[] = [
   {
     slug: "devsectool",
     title: "DevSecTool",
-    subtitle:"Banking Cybersecurity Web App. Build for large German bank",
+    subtitle:"Banking Cybersecurity Web App. Built for large German bank",
     summary: "As founding product designer, I owned the UX end to end, shaped the product concept and the design system. DevSecTool is a desktop Web App built to manage the bank’s security standards like ISO 27001 and internal policies like a checklist: compliance officers switch on the rules that apply, and implementation teams track each one to completion.",
     timeline: "2021 – 2025",
     timelineMobile: "2021–25",
