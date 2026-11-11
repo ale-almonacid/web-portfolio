@@ -4,8 +4,6 @@ import Footer from "@/components/Footer"
 //icons
 import LinkedinIcon from "@/assets/linkedin.svg?react"
 import GithubIcon from "@/assets/github.svg?react"
-import Linkedin from "@/assets/linkedin.svg"
-import Github from "@/assets/github.svg"
 import { Mail } from "lucide-react"
 
 //image
