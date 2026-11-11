@@ -79,7 +79,7 @@
 }
 
 /* 2. Semantic tokens */
-:root {
+:root, .light {
 
    /* ---------- TEXT ---------- */
   --foreground: var(--color-bluegray-950);         /* text/primary */

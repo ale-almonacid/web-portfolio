@@ -28,7 +28,7 @@ function TechStackDrawer({slug, toolList }: Props) {
       <DrawerContent>
          <DrawerClose
     aria-label="Close"
-    className="absolute top-4 right-4 z-20 flex size-9 items-center justify-center rounded-full bg-bluegray-100 text-foreground"
+    className="absolute top-4 right-4 z-20 flex size-9 items-center justify-center rounded-full bg-secondary text-foreground"
   >
     <X className="size-5" />
   </DrawerClose>

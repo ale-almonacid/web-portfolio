@@ -16,7 +16,7 @@ function ProjectCardMobile({ project }: Props) {
     <article 
     >
         <div id="container-bgimage"
-  className={`mx-auto h-[619px] flex flex-col w-full bg-cover bg-center ${project.darkBg ? "dark" : ""}`}
+  className={`mx-auto h-[619px] flex flex-col w-full bg-cover bg-center ${project.darkBg ? "dark" : "light"}`}
   style={project.bgImageMobile ? { backgroundImage: `url(${project.bgImageMobile})` } : undefined}
       >
         <div id="header" className="flex flex-col gap-0.5 px-[5vw] py-4">
