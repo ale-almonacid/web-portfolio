@@ -1,6 +1,6 @@
-import Linkedin from "@/assets/linkedin.svg"
-import Github from "@/assets/github.svg"
-import Behance from "@/assets/behance.svg"
+import LinkedinIcon from "@/assets/linkedin.svg?react"
+import GithubIcon from "@/assets/github.svg?react"
+import BehanceIcon from "@/assets/behance.svg?react"   
 
 function Footer() {
   return (
@@ -20,13 +20,16 @@ function Footer() {
         <div className="flex flex-row justify-between md:flex-col items-end gap-2">
           <div className="flex items-center gap-3.5 text-foreground">
             <a href="https://www.linkedin.com/in/alejandraalmonacid/" aria-label="LinkedIn" target="_blank">
-              <img src={Linkedin} alt="" />
+              <LinkedinIcon className="text-foreground" aria-hidden />
+
             </a>
             <a href="https://github.com/ale-almonacid" aria-label="GitHub" target="_blank">
-              <img src={Github} alt="" />
+              <GithubIcon className="text-foreground" aria-hidden />
+
             </a>
             <a href="https://www.behance.net/alejandraalmonacid" aria-label="Behance" target="_blank" className="font-bold">
-              <img src={Behance} alt="" />
+              <BehanceIcon className="text-foreground" aria-hidden />
+
             </a>
           </div>
           <p className="text-sm text-muted-foreground">©2026</p>

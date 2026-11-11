@@ -13,10 +13,10 @@ function ProjectCardDesktop({ project }: Props) {
       
     >
 
-        <div className="flex flex-col p-6 gap-8 bg-white rounded-md">
+        <div className="light flex flex-col p-6 gap-8 bg-white rounded-md">
         <div className="flex flex-col gap-0.5">
 
-        <h3 className="text-2xl tracking-[-.03em]">{project.title}</h3>
+        <h3 className="text-2xl tracking-[-.03em] text-foreground">{project.title}</h3>
         <p className="text-sm text-muted-foreground">{project.subtitle}</p>
         <div className="flex flex-wrap gap-2 pt-2.5">
         {project.tags?.map((t) => <Tag key={t} name={t} />)}

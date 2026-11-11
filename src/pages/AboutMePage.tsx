@@ -2,6 +2,8 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 
 //icons
+import LinkedinIcon from "@/assets/linkedin.svg?react"
+import GithubIcon from "@/assets/github.svg?react"
 import Linkedin from "@/assets/linkedin.svg"
 import Github from "@/assets/github.svg"
 import { Mail } from "lucide-react"
@@ -58,8 +60,9 @@ function AboutMePage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 hover:underline"
-              >
-                <img src={Linkedin} alt="" className="size-4" />
+              > 
+                <LinkedinIcon className="text-foreground aria-hidden size-4"/>
+
                 in/alejandraalmonacid
               </a>
               <span aria-hidden className="hidden lg:block">·</span>
@@ -79,7 +82,8 @@ function AboutMePage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 hover:underline"
               >
-                <img src={Github} alt="" className="size-4.5" />
+                <GithubIcon className="text-foreground aria-hidden size-4.5"/>
+                
                 ale-almonacid
               </a>
             </div>
