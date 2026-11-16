@@ -45,11 +45,11 @@ function ProjectHero({ project, children }: Props) {
             All Projects
           </Button>
           <div className="flex flex-col gap-1">
-            <h1 className="max-w-2xl text-xl leading-tight font-normal tracking-[-.04em] text-foreground md:text-4xl">
+            <h1 className="max-w-2xl text-xl leading-tight font-medium tracking-[-.04em] text-foreground md:text-4xl">
               {project.title}
             </h1>
             <p className="text-sm text-muted-foreground">{project.subtitle}</p>
-            <div className="flex flex-wrap gap-[5px] pt-2.5">
+            <div className="flex flex-wrap gap-[4px] pt-2.5">
               {project.tags?.map((t) => (
                 <Tag key={t} name={t} />
               ))}

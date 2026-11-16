@@ -6,7 +6,7 @@ function ToolTile({ name }: { name: ToolName }) {
       <div key={name} className="flex flex-col items-center gap-2">
         <img src={tools[name]} alt="" className=" size-12 md:size-12 drop-shadow-2xl"></img>
 
-        <span className="text-[11px] lg:text-[12px] text-muted-foreground">{name}</span>
+        <span className="text-[12px] lg:text-[12px] text-muted-foreground">{name}</span>
       </div>
     </div>
   )
