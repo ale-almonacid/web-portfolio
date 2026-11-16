@@ -41,7 +41,7 @@ function ProjectHero({ project, children }: Props) {
         <div className="flex flex-col gap-5">
           <Button
             variant="outline"
-            size="xs"
+            size="sm"
             className="self-start"
             nativeButton={false}
             render={<Link to="/" />}
@@ -50,7 +50,7 @@ function ProjectHero({ project, children }: Props) {
             All Projects
           </Button>
           <div className="flex flex-col gap-1">
-            <h1 className="max-w-2xl text-xl leading-tight font-medium tracking-[-.04em] text-foreground md:text-4xl">
+            <h1 className="max-w-2xl text-xl leading-tight font-medium tracking-[-.04em] text-foreground md:text-3xl md:font-normal">
               {project.title}
             </h1>
             <p className="text-sm text-muted-foreground">{project.subtitle}</p>
@@ -144,10 +144,10 @@ function ProjectHero({ project, children }: Props) {
         id="header"
         className="mx-auto flex w-full max-w-[1920px] flex-row items-end justify-between px-[5vw] pt-10 xl:px-36"
       >
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-5">
           <Button
             variant="outline"
-            size="xs"
+            size="sm"
             className="self-start"
             nativeButton={false}
             render={<Link to="/" />}
@@ -156,11 +156,11 @@ function ProjectHero({ project, children }: Props) {
             All Projects
           </Button>
           <div className="flex flex-col gap-1">
-            <h1 className="max-w-2xl text-3xl leading-tight font-normal tracking-[-.04em] text-foreground md:text-4xl">
+            <h1 className="max-w-2xl text-3xl leading-tight font-normal tracking-[-.04em] text-foreground md:text-3xl">
               {project.title}
             </h1>
             <p className="text-muted-foreground">{project.subtitle}</p>
-            <div className="flex flex-wrap gap-2 pt-2.5">
+            <div className="flex flex-wrap gap-2 pt-1.5">
               {project.tags?.map((t) => (
                 <Tag key={t} name={t} />
               ))}
