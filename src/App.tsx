@@ -1,4 +1,6 @@
 import { Routes, Route } from "react-router"
+import ScrollToTop from "./components/ScrollToTop"
+
 
 //Pages
 import HomePage from "./pages/HomePage"
@@ -16,6 +18,7 @@ import { Analytics } from "@vercel/analytics/react"
 function App() {
   return (
     <>
+    <ScrollToTop />
     <Routes>
 
        <Route path="/" element={<HomePage />} />

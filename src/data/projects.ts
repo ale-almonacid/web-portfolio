@@ -26,8 +26,9 @@ export type Project = {
   timelineMobile: string  
   role: string              // desktop
   roleMobile: string
-  tools: string[]
+  toolsText: string[]
   toolsMobile: ToolName[]
+  toolsDetails: ToolName[]
   bgImage?:string           // Desktop
   bgImageMobile?: string 
   uiImageMobile?: string       
@@ -45,7 +46,8 @@ export const projects: Project[] = [
     timelineMobile: "2021–25",
     role: "Founding Product Designer",
     roleMobile: "Product Designer",
-    tools: ["Figma", "Zeplin", "Jira", "Adobe"],
+    toolsText: ["Figma", "Zeplin", "Jira", "Adobe"],
+    toolsDetails: ["Figma", "Zeplin", "Jira", "Adobe CC"],
     toolsMobile: ["Figma", "Zeplin", "Jira", "Illustrator", "Photoshop", "InDesign"],
     bgImage: bg1,
     bgImageMobile: bgMobile1,
@@ -62,7 +64,8 @@ export const projects: Project[] = [
     timelineMobile: "2024–Now",
     role: "Founding Product Designer (part-time)",
     roleMobile: "Product Designer",
-    tools: ["Figma", "Figma Make", "Claude"],
+    toolsText: ["Figma", "Figma Make", "Claude", "Adobe"],
+    toolsDetails: ["Figma", "Figma Make", "Claude", "Adobe CC"],
     toolsMobile: ["Figma", "Figma Make", "Claude","Illustrator", "Photoshop", "InDesign"],
     bgImage: bg2,
     bgImageMobile: bgMobile2,
@@ -79,7 +82,8 @@ export const projects: Project[] = [
     timelineMobile: "2026",
     role: "Product Designer & Front-end Developer (solo) ",
     roleMobile: "Design Engineer",
-    tools: ["Figma", "React (javaScript)", "Shadcn/ui, Tailwind, Storybook"],
+    toolsText: ["Figma", "React (javaScript)", "Shadcn/ui", "Tailwind", "Storybook"],
+    toolsDetails: ["Figma", "React", "JavaScript", "Shadcn", "Tailwind", "Storybook"],
     toolsMobile: ["Figma", "React", "JavaScript", "Tailwind", "Shadcn", "Storybook"],
     bgImage: bg3,
     bgImageMobile: bgMobile3,
