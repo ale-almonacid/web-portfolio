@@ -23,6 +23,11 @@ function ProjectHero({ project, children }: Props) {
       ? "grid-cols-[repeat(3,5rem)]"
       : "grid-cols-[repeat(2,5rem)]"
 
+  const toolColsMobile =
+    project.toolsDetails.length > 4
+      ? "grid-cols-[repeat(3,5rem)]"
+      : "grid-cols-[repeat(4,5rem)]"
+
   return (
     <section className="flex flex-col gap-10">
 
@@ -49,7 +54,7 @@ function ProjectHero({ project, children }: Props) {
               {project.title}
             </h1>
             <p className="text-sm text-muted-foreground">{project.subtitle}</p>
-            <div className="flex flex-wrap gap-[4px] pt-2.5">
+            <div className="flex flex-wrap gap-[4px] pt-1">
               {project.tags?.map((t) => (
                 <Tag key={t} name={t} />
               ))}
@@ -62,7 +67,7 @@ function ProjectHero({ project, children }: Props) {
        {/* image */}
       <div
         id="image"
-        className="mx-auto h-[474px] w-full max-w-[1632px] bg-cover bg-center"
+        className="mx-auto h-[300px] w-full max-w-[1632px] bg-cover bg-center"
         style={
           project.bgImage
             ? { backgroundImage: `url(${project.bgImage})` }
@@ -117,7 +122,7 @@ function ProjectHero({ project, children }: Props) {
 
         <div
           id="tech-stack"
-          className={`grid shrink-0 grid-cols-[repeat(4,5rem)] gap-x-1 gap-y-6 px-4`}
+          className={`grid w-full shrink-0 ${toolColsMobile} justify-between gap-y-6 px-4 md:w-auto md:justify-start md:gap-x-6`}
         >
           {project.toolsDetails.map((t) => (
             <ToolTile key={t} name={t} />
