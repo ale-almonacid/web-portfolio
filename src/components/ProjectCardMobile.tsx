@@ -49,9 +49,15 @@ function ProjectCardMobile({ project }: Props) {
         </div>
 
 
-        <div id="ui-image-container" className="pt-5 flex-1 min-h-0 overflow-hidden pl-[10vw] md:px-[10vw]">
+        <NavLink
+          id="ui-image-container"
+          to={`/projects/${project.slug}`}
+          tabIndex={-1}
+          aria-hidden
+          className="block pt-5 flex-1 min-h-0 overflow-hidden pl-[10vw] md:px-[10vw]"
+        >
         <img id="screens" className="block ml-auto h-full w-auto max-w-none md:mx-auto md:max-w-full md:object-contain" src={project.uiImageMobile} alt="" />
-        </div>
+        </NavLink>
 
         </div>
 

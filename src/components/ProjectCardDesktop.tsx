@@ -50,7 +50,7 @@ function ProjectCardDesktop({ project }: Props) {
 
                 <p className="text-[9pt] tracking-[.25em] uppercase text-muted-foreground">Tech stack</p>
                 <p className="text-sm text-foreground">
-                {project.tools.join(" · ")}
+                {project.toolsText.join(" · ")}
                 </p>
 
             </div>

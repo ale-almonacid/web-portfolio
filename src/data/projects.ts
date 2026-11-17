@@ -16,6 +16,12 @@ import uiMobile1 from "@/assets/bg/ui-mobile-1.png"
 import uiMobile2 from "@/assets/bg/ui-mobile-2.png"
 import uiMobile3 from "@/assets/bg/ui-mobile-3.png"
 
+// overview 
+import overviewImg1 from "@/assets/overview-images/ov-img-1.png"
+import overviewImg2 from "@/assets/overview-images/ov-img-2.png"
+import overviewImg3 from "@/assets/overview-images/ov-img-3.png"
+
+
 
 export type Project = {
   slug: string          // used in the URL: /projects/devsectool
@@ -26,9 +32,11 @@ export type Project = {
   timelineMobile: string  
   role: string              // desktop
   roleMobile: string
-  tools: string[]
+  toolsText: string[]
   toolsMobile: ToolName[]
+  toolsDetails: ToolName[]
   bgImage?:string           // Desktop
+  ovImage?:string  
   bgImageMobile?: string 
   uiImageMobile?: string       
   tags?: TagName[]         // tags
@@ -45,11 +53,13 @@ export const projects: Project[] = [
     timelineMobile: "2021–25",
     role: "Founding Product Designer",
     roleMobile: "Product Designer",
-    tools: ["Figma", "Zeplin", "Jira", "Adobe"],
+    toolsText: ["Figma", "Zeplin", "Jira", "Adobe"],
+    toolsDetails: ["Figma", "Zeplin", "Jira", "Adobe CC"],
     toolsMobile: ["Figma", "Zeplin", "Jira", "Illustrator", "Photoshop", "InDesign"],
     bgImage: bg1,
     bgImageMobile: bgMobile1,
     uiImageMobile: uiMobile1,
+    ovImage: overviewImg1,
     tags: ["B2B SaaS", "Design System", "0→1", "Fintech & Compliance"],
     darkBg: true,
   },
@@ -62,11 +72,13 @@ export const projects: Project[] = [
     timelineMobile: "2024–Now",
     role: "Founding Product Designer (part-time)",
     roleMobile: "Product Designer",
-    tools: ["Figma", "Figma Make", "Claude"],
+    toolsText: ["Figma", "Figma Make", "Claude", "Adobe"],
+    toolsDetails: ["Figma", "Figma Make", "Claude", "Adobe CC"],
     toolsMobile: ["Figma", "Figma Make", "Claude","Illustrator", "Photoshop", "InDesign"],
     bgImage: bg2,
     bgImageMobile: bgMobile2,
     uiImageMobile: uiMobile2,
+    ovImage: overviewImg2,
     tags: ["Mobile-first", "Cross-platform (iOS / Android / Web)", "0→1"],
     darkBg: true,
   },
@@ -79,11 +91,13 @@ export const projects: Project[] = [
     timelineMobile: "2026",
     role: "Product Designer & Front-end Developer (solo) ",
     roleMobile: "Design Engineer",
-    tools: ["Figma", "React (javaScript)", "Shadcn/ui, Tailwind, Storybook"],
+    toolsText: ["Figma", "React (javaScript)", "Shadcn/ui", "Tailwind", "Storybook"],
+    toolsDetails: ["Figma", "React", "JavaScript", "Shadcn", "Tailwind", "Storybook"],
     toolsMobile: ["Figma", "React", "JavaScript", "Tailwind", "Shadcn", "Storybook"],
     bgImage: bg3,
     bgImageMobile: bgMobile3,
     uiImageMobile: uiMobile3,
+    ovImage: overviewImg3,
     tags: ["Design Engineering", "Design tokens", "React", "Storybook"],
     darkBg: false,
   },

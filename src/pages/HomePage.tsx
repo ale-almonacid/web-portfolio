@@ -58,7 +58,7 @@ function HomePage() {
         <CardCTA
     eyebrow="View About Me"
     title="Read my story"
-    description="I’m a Colombian Product Designer based in Berlin, trained in Milan. 5+ years designing fintech and B2B products at startups, from first sketch to design system. Now also building them in React."
+    description="I’m a Colombian Product Designer based in Berlin, trained in Milan. 5+ years designing B2B SaaS products at startups, from first sketch to design system. Now also building them in React."
     tags="Product design · Design systems · Front-end (React)"
     to="/about-me"
   />
