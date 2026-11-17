@@ -67,10 +67,10 @@ function ProjectHero({ project, children }: Props) {
        {/* image */}
       <div
         id="image"
-        className="mx-auto h-[300px] w-full max-w-[1632px] bg-cover bg-center"
+        className="mx-auto aspect-[13/10] w-full max-w-[1632px] bg-cover bg-right"
         style={
-          project.bgImage
-            ? { backgroundImage: `url(${project.bgImage})` }
+          project.ovImage
+            ? { backgroundImage: `url(${project.ovImage})` }
             : undefined
         }
       ></div>
@@ -134,7 +134,7 @@ function ProjectHero({ project, children }: Props) {
        
        
        
-       
+       {/* ---------------------------------------- */}
        
        {/* desktop */}
        <div id="desktop-wrapper" className="hidden lg:flex flex-col gap-10">
@@ -170,9 +170,9 @@ function ProjectHero({ project, children }: Props) {
 
         <div
           id="role-container"
-          className="flex flex-row items-center gap-2 border-y-[1px] px-1 py-4"
+          className="flex flex-row items-center gap-2 border-y-[1px] px-1 py-4 items-start"
         >
-          <div className="flex min-w-[180px] flex-col gap-1 px-4">
+          <div className="flex min-w-[180px] max-w-[180px] flex-col gap-1 px-4">
             <UserPen size={"18px"}></UserPen>
             <p className="text-sm tracking-[0.25em] text-foreground uppercase">
               Role
@@ -182,7 +182,7 @@ function ProjectHero({ project, children }: Props) {
 
           <Separator orientation="vertical"></Separator>
 
-          <div className="flex min-w-[180px] flex-col gap-1 px-4">
+          <div className="flex min-w-[180px] max-w-[180px] flex-col gap-1 px-4">
             <Clock5 size={"18px"}></Clock5>
             <p className="text-sm tracking-[0.25em] text-foreground uppercase">
               Timeline
@@ -198,8 +198,8 @@ function ProjectHero({ project, children }: Props) {
         id="image"
         className="mx-auto aspect-[16/7] w-full max-w-[1632px] bg-cover bg-center"
         style={
-          project.bgImage
-            ? { backgroundImage: `url(${project.bgImage})` }
+          project.ovImage
+            ? { backgroundImage: `url(${project.ovImage})` }
             : undefined
         }
       ></div>

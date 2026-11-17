@@ -15,7 +15,7 @@ function BetterLifePage() {
       
         {/* Hero */}
        <ProjectHero project={project}>
-        DevSecTool is a desktop web application commissioned by a <span className="font-semibold">large German bank</span> to improve the workflow of its cybersecurity experts. As the founding designer of the project, I owned the <span className="font-semibold ">end-to-end UX process</span>, from initial concept and design system development to final handoff. I collaborated with the bank’s stakeholders to gather requirements and feedback, worked closely with an <span className="font-semibold">Information security specialist</span> during the conceptual phase, and partnered with both front-end and back-end engineers throughout development, handoff and QA.
+        BetterLife is a cross-platform modular health habit tracker built with Flutter. As the founding product designer, I work closely with the developer-founder to <span className="font-semibold">shape the product direction</span>, define features, and lead UX/UI and brand development. Working within an AI-assisted workflow, <span className="font-semibold">I audit AI-generated prototypes</span>, identify usability issues and inconsistencies, eliminate generic or unnecessary design elements, and refine the experience through considered design decisions and <span className="font-semibold">feedback from early testers</span>.
       </ProjectHero>
 
       {/* Footer */}

@@ -15,7 +15,7 @@ function ItinotePage() {
 
       {/* Hero */}
         <ProjectHero project={project}>
-        DevSecTool is a desktop web application commissioned by a <span className="font-semibold">large German bank</span> to improve the workflow of its cybersecurity experts. As the founding designer of the project, I owned the <span className="font-semibold ">end-to-end UX process</span>, from initial concept and design system development to final handoff. I collaborated with the bank’s stakeholders to gather requirements and feedback, worked closely with an <span className="font-semibold">Information security specialist</span> during the conceptual phase, and partnered with both front-end and back-end engineers throughout development, handoff and QA.
+          Itinote is a minimalist itinerary planning app built to simplify travel planning by focusing on the essentials. I independently led the <span className="font-semibold">product definition</span>, UX/UI design, design system, and <span className="font-semibold">frontend implementation</span> in React, taking the project from Figma to a live product. Along the way, I explored design engineering by translating <span className="font-semibold">design tokens</span>, theme context, and reusable components into code, using Storybook to bridge design and development. The project has since evolved into a collaborative product, <span className="font-semibold">now live</span> with authentication, with ongoing backend development.
       </ProjectHero>
        
 
