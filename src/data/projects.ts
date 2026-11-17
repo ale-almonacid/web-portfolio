@@ -17,7 +17,10 @@ import uiMobile2 from "@/assets/bg/ui-mobile-2.png"
 import uiMobile3 from "@/assets/bg/ui-mobile-3.png"
 
 // overview 
+import overviewImg1 from "@/assets/overview-images/ov-img-1.png"
+import overviewImg2 from "@/assets/overview-images/ov-img-2.png"
 import overviewImg3 from "@/assets/overview-images/ov-img-3.png"
+
 
 
 export type Project = {
@@ -56,7 +59,7 @@ export const projects: Project[] = [
     bgImage: bg1,
     bgImageMobile: bgMobile1,
     uiImageMobile: uiMobile1,
-    ovImage: overviewImg3,
+    ovImage: overviewImg1,
     tags: ["B2B SaaS", "Design System", "0→1", "Fintech & Compliance"],
     darkBg: true,
   },
@@ -75,7 +78,7 @@ export const projects: Project[] = [
     bgImage: bg2,
     bgImageMobile: bgMobile2,
     uiImageMobile: uiMobile2,
-    ovImage: overviewImg3,
+    ovImage: overviewImg2,
     tags: ["Mobile-first", "Cross-platform (iOS / Android / Web)", "0→1"],
     darkBg: true,
   },
