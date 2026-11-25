@@ -5,6 +5,7 @@ import ProjectHero from "@/components/ProjectHero"
 import { projects } from "@/data/projects"
 import { Separator } from "@/components/ui/separator"
 import CardCTA from "@/components/CardCTA"
+import NextProjectCard from "@/components/NextProjectCard"
 import ProcessFlow, { type ProcessStep } from "@/components/ProcessFlow"
 
 //icons
@@ -263,7 +264,7 @@ function DevSecToolPage() {
       </section>
       
         {/* cta-section */}
-      <section id="cta-section" className="mx-auto pt-14 pb-24 xl:py-28 px-[5vw] xl:px-36 max-w-[1920px]">
+      <section id="cta-section" className="mx-auto pb-24 xl:pb-28 px-[5vw] xl:px-36 max-w-[1920px]">
 
         <div className="grid gap-10 md:grid-cols-2 px-[5vw] xl:px-24">
         <CardCTA
@@ -273,13 +274,7 @@ function DevSecToolPage() {
     tags="Product design · Design systems · Front-end (React)"
     to="/about-me"
   />
-    <CardCTA
-    eyebrow="Designed & coded by me"
-    title="About this portfolio"
-    description="This site was fully designed and coded by me, with dedicated layouts and components for mobile, desktop and large screens. Not just responsive adaptations, but carefully crafted experiences for every screen size."
-    tags="Figma · React · TypeScript · Tailwind"
-    to="https://github.com/ale-almonacid/web-portfolio"
-  />
+    <NextProjectCard currentSlug={project.slug} />
 </div>
 
       </section>

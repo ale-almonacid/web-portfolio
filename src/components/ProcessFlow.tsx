@@ -40,21 +40,21 @@ function ProcessFlow({ steps }: Props) {
           />
         </div>
 
-        <ol className="relative grid gap-24 lg:grid-cols-3 lg:gap-6">
+        <ol className="relative mx-auto grid max-w-58 gap-15 lg:max-w-none lg:grid-cols-3 lg:gap-6">
           {steps.map((step, i) => (
             <li
               key={step.title}
               className="relative flex flex-col items-center text-center"
             >
-              <img src={step.icon} alt="" className="h-20 w-auto" />
+              <img src={step.icon} alt="" className="h-16 w-auto lg:h-20" />
 
-              <span className="mt-6 rounded-sm bg-[#0947F1]/10 px-2 py-[3px] text-xs text-[#082A88] dark:bg-sky-accent/20 dark:text-sky-accent">
+              <span className="mt-3 rounded-sm bg-[#0947F1]/10 px-2 py-[3px] text-xs text-[#082A88] dark:bg-sky-accent/20 dark:text-sky-accent">
                 {step.badge}
               </span>
 
-              <h3 className="mt-2 text-xl text-foreground">{step.title}</h3>
+              <h3 className="mt-1 text-md lg:text-xl text-foreground">{step.title}</h3>
 
-              <p className="mt-1 max-w-xs text-sm/6 text-muted-foreground lg:text-[16px]/6.5">
+              <p className=" max-w-xs text-xs/5 text-muted-foreground lg:text-[16px]/6.5">
                 {step.description}
               </p>
 
@@ -78,7 +78,7 @@ function VerticalConnector({ withArrowhead }: { withArrowhead: boolean }) {
     <div
       ref={ref}
       aria-hidden
-      className="absolute top-full left-1/2 mt-6 h-12 -translate-x-1/2 lg:hidden"
+      className="absolute top-full left-1/2 mt-3 h-8 -translate-x-1/2 lg:hidden"
     >
       <div
         className={`h-full w-0.5 origin-top bg-border transition-transform duration-700 ease-out motion-reduce:transition-none ${
