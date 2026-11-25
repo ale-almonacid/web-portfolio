@@ -7,6 +7,7 @@ import { Separator } from "@/components/ui/separator"
 import CardCTA from "@/components/CardCTA"
 import NextProjectCard from "@/components/NextProjectCard"
 import ProcessFlow, { type ProcessStep } from "@/components/ProcessFlow"
+import LottieOnScroll from "@/components/LottieOnScroll"
 
 //icons
 import { Swords } from 'lucide-react'
@@ -18,6 +19,7 @@ import PrimaryUserIcon from "@/assets/devsectool-assets/primary-user.svg"
 import DeliverablesIcon from "@/assets/devsectool-assets/deliverables.svg"
 import SecondaryUserIcon from "@/assets/devsectool-assets/secondary-user.svg"
 import DesSolution1 from "@/assets/devsectool-assets/04-1.png"
+import Illustration1 from "@/assets/devsectool-assets/illustration1.lottie?url"
 import Visuals1 from "@/assets/devsectool-assets/visuals1.png"
 import DesSolution2 from "@/assets/devsectool-assets/04-2.png"
 import DesSolution3 from "@/assets/devsectool-assets/04-3.png"
@@ -178,7 +180,7 @@ function DevSecToolPage() {
           <h3 className="text-sm font-medium lg:text-base">Information structure</h3>
           <p className="text-sm/6 text-muted-foreground lg:text-[16px]/6.5">Instead of keeping the requirements as plain text, the information was structured as connected objects to preserve their dependencies. My contribution was suggesting a collapsible tree as the best way to show the relations between objects and give a quick overview, plus distinct icons for each object type, for easier recognition at a glance.</p>
 
-           <img src={Visuals1} alt="" className="w-full pt-10 lg:w-4/5" />
+           <LottieOnScroll src={Illustration1} className="lg:mt-10 aspect-[657/502] w-full lg:w-4/5" />
           
         </div>
 
