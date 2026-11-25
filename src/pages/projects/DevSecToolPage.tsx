@@ -195,7 +195,7 @@ function DevSecToolPage() {
           <h3 className="text-sm font-medium lg:text-base">Template reusability</h3>
           <p className="text-sm/6 text-muted-foreground lg:text-[16px]/6.5">After long discussions with the information security officers I worked with, I understood how important reusability was for this product. The same recommendations apply to many products and assets, and officers already had their own templates. So we added a template builder: every product or asset in the platform is built from a template, like a master component in Figma with its instances.</p>
 
-           <VideoOnScroll src={Illustration2} className="mt-4 lg:mt-10 aspect-[533/291] w-full lg:w-4/4" />
+           <VideoOnScroll src={Illustration2} className="mt-4 lg:mt-10 aspect-[533/291] w-[105%] lg:w-4/4" />
           
         </div>
 
