@@ -84,12 +84,12 @@ function DevSecToolPage() {
     
         <ProcessFlow steps={workflowSteps}/>
 
-        <div id="CTA-challenge" className="dark p-4 bg-bluegray-900 rounded-md flex flex-col gap-3">
+        <div id="CTA-challenge" className="dark p-4 bg-bluegray-900 rounded-md flex flex-col gap-2">
           <Swords className="text-sky-accent"></Swords>
 
           <div className="flex flex-col gap-1">
 
-          <div className="fle flex-col gap-0">
+          <div className="fle flex-col gap-1">
           <h2 className="text-xl text-foreground">My challenge</h2>
           <h3 className="text-sm font-medium text-foreground lg:text-base">Understanding users in a technical, unfamiliar field (information security)</h3>
           </div>
