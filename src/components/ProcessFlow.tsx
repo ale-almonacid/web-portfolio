@@ -54,7 +54,7 @@ function ProcessFlow({ steps }: Props) {
 
               <h3 className="mt-2 text-xl text-foreground">{step.title}</h3>
 
-              <p className="mt-1 max-w-xs text-[16px]/6.5 text-muted-foreground">
+              <p className="mt-1 max-w-xs text-sm/6 text-muted-foreground lg:text-[16px]/6.5">
                 {step.description}
               </p>
 

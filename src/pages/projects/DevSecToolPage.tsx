@@ -77,8 +77,8 @@ function DevSecToolPage() {
 
           <p className="text-5xl text-secondary ">01.</p>
           <h2 className="text-xl">Background</h2>
-          <h3 className="text-bold">A product meant for information security officers in the banking sector.</h3>
-          <p className="text-[16px]/6.5 text-muted-foreground">Every digital product a bank builds must follow security requirements from standards like ISO 27001, regulators and internal policies. To achieve this, the usual workflow is the following: security officers decide which requirements apply, developers implement them, and officers check that everything is in place, often before an audit or certification.</p>
+          <h3 className="text-sm font-medium lg:text-base">A product meant for information security officers in the banking sector.</h3>
+          <p className="text-sm/6 text-muted-foreground lg:text-[16px]/6.5">Every digital product a bank builds must follow security requirements from standards like ISO 27001, regulators and internal policies. To achieve this, the usual workflow is the following: security officers decide which requirements apply, developers implement them, and officers check that everything is in place, often before an audit or certification.</p>
         </div>
     
         <ProcessFlow steps={workflowSteps}/>
@@ -86,8 +86,8 @@ function DevSecToolPage() {
         <div id="CTA-challenge" className="dark p-4 bg-bluegray-900 rounded-md flex flex-col gap-1">
           <Swords className="text-sky-accent"></Swords>
           <h2 className="text-xl text-foreground">My challenge</h2>
-          <h3 className="text-bold text-foreground">Understanding users in a technical, unfamiliar field (information security)</h3>
-          <p className="text-[16px]/6.5 text-muted-foreground">Before joining, I had no background in information security. I learned the workflow from our security specialist and the bank's stakeholders in feedback meetings, to identify the users, their needs, workflows and constraints.</p>
+          <h3 className="text-sm font-medium text-foreground lg:text-base">Understanding users in a technical, unfamiliar field (information security)</h3>
+          <p className="text-sm/6 text-muted-foreground lg:text-[16px]/6.5">Before joining, I had no background in information security. I learned the workflow from our security specialist and the bank's stakeholders in feedback meetings, to identify the users, their needs, workflows and constraints.</p>
 
         </div>
         
@@ -109,7 +109,7 @@ function DevSecToolPage() {
 
         <p className="text-5xl text-secondary ">02.</p>
         <h2 className="text-xl">Pain points definition (problem)</h2>
-        <ol className="list-decimal pl-6 text-[16px]/6.5 text-muted-foreground marker:font-semibold">
+        <ol className="list-decimal pl-6 text-sm/6 text-muted-foreground lg:text-[16px]/6.5 marker:font-semibold">
           <li><span className="font-semibold">Decentralised documentation.</span> Requirements were spread across thousands of files.</li>
           <li><span className="font-semibold">Repetitive work.</span> Similar products meant a lot of copy-pasting of the same requirements.</li>
           <li><span className="font-semibold">No traceability.</span> Hard to see what was done, who owned it and what was open.</li>
@@ -125,7 +125,7 @@ function DevSecToolPage() {
         <div className="flex flex-col gap-2">
         <p className="text-5xl text-secondary ">03.</p>
         <h2 className="text-xl">Scope definition (solution)</h2>
-        <ol className="list-decimal pl-6 text-[16px]/6.5 text-muted-foreground marker:font-semibold">
+        <ol className="list-decimal pl-6 text-sm/6 text-muted-foreground lg:text-[16px]/6.5 marker:font-semibold">
           <li><span className="font-semibold">One platform.</span> All requirements, owners and progress in one place.</li>
           <li><span className="font-semibold">Reusable templates.</span> Set up requirements once and reuse them across similar products.</li>
           <li><span className="font-semibold">Implementation status.</span> Developers update progress, and officers see at a glance what's done.</li>
@@ -156,7 +156,7 @@ function DevSecToolPage() {
 
           <p className="text-5xl text-secondary ">04.</p>
           <h2 className="text-xl">Design decisions</h2>
-          <p className="text-[16px]/6.5 text-muted-foreground">As the founding product designer, my role was also deeply conceptual. I had to understand what security officers actually do, what they need, and the patterns they already rely on. Here are a few of the design decisions that came out of that.</p>
+          <p className="text-sm/6 text-muted-foreground lg:text-[16px]/6.5">As the founding product designer, my role was also deeply conceptual. I had to understand what security officers actually do, what they need, and the patterns they already rely on. Here are a few of the design decisions that came out of that.</p>
         </div>
 
 
@@ -168,8 +168,8 @@ function DevSecToolPage() {
         <img src={DesSolution1} alt="" className="w-full lg:w-[45%]"/>
 
         <div className="px-[5vw] xl:px-36 flex flex-col gap-1 ">
-          <h3 className="font-medium">Information structure</h3>
-          <p className="text-[16px]/6.5 text-muted-foreground">Instead of keeping the requirements as plain text, the information was structured as connected objects to preserve their dependencies. My contribution was suggesting a collapsible tree as the best way to show the relations between objects and give a quick overview, plus distinct icons for each object type, for easier recognition at a glance.</p>
+          <h3 className="text-sm font-medium lg:text-base">Information structure</h3>
+          <p className="text-sm/6 text-muted-foreground lg:text-[16px]/6.5">Instead of keeping the requirements as plain text, the information was structured as connected objects to preserve their dependencies. My contribution was suggesting a collapsible tree as the best way to show the relations between objects and give a quick overview, plus distinct icons for each object type, for easier recognition at a glance.</p>
 
            <img src={Visuals1} alt="" className="w-full pt-10 lg:w-4/5" />
           
@@ -181,8 +181,8 @@ function DevSecToolPage() {
         <div id="columns2" className="flex flex-col-reverse gap-8 items-center py-12 lg:flex-row lg:gap-0">
 
         <div className="px-[5vw] xl:px-36 flex flex-col gap-1 ">
-          <h3 className="font-medium">Template reusability</h3>
-          <p className="text-[16px]/6.5 text-muted-foreground">After long discussions with the information security officers I worked with, I understood how important reusability was for this product. The same recommendations apply to many products and assets, and officers already had their own templates. So we added a template builder: every product or asset in the platform is built from a template, like a master component in Figma with its instances.</p>
+          <h3 className="text-sm font-medium lg:text-base">Template reusability</h3>
+          <p className="text-sm/6 text-muted-foreground lg:text-[16px]/6.5">After long discussions with the information security officers I worked with, I understood how important reusability was for this product. The same recommendations apply to many products and assets, and officers already had their own templates. So we added a template builder: every product or asset in the platform is built from a template, like a master component in Figma with its instances.</p>
 
            <img src={Visuals1} alt="" className="w-full pt-10 lg:w-4/5" />
           
@@ -196,8 +196,8 @@ function DevSecToolPage() {
         <img src={DesSolution3} alt="" className="w-full lg:w-[45%]"/>
 
         <div className="px-[5vw] xl:px-36 flex flex-col gap-1 ">
-          <h3 className="font-medium">Control & Traceability</h3>
-          <p className="text-[16px]/6.5 text-muted-foreground">Thanks to the tree structure and the template logic, officers no longer copy and paste the same paragraphs for every similar asset. Instead, they review the template base and switch off what doesn't apply, one requirement at a time or a whole chapter at once by toggling its parent object. My contribution here was the on/off toggle mechanism.</p>
+          <h3 className="text-sm font-medium lg:text-base">Control & Traceability</h3>
+          <p className="text-sm/6 text-muted-foreground lg:text-[16px]/6.5">Thanks to the tree structure and the template logic, officers no longer copy and paste the same paragraphs for every similar asset. Instead, they review the template base and switch off what doesn't apply, one requirement at a time or a whole chapter at once by toggling its parent object. My contribution here was the on/off toggle mechanism.</p>
 
            <img src={Visuals1} alt="" className="w-full pt-10 lg:w-4/5" />
           
@@ -220,7 +220,7 @@ function DevSecToolPage() {
 
           <p className="text-5xl text-secondary ">05.</p>
           <h2 className="text-xl">Design system</h2>
-          <p className="text-[16px]/6.5 text-muted-foreground">The design system started from Ant Design, which at the time felt quite angular and rigid. My mission was to use it as a reference and give it our own style. I built it in 2022 and kept evolving it until the end of the project. It grew into a library of 100+ core components and 330+ component sets, with 65 color styles, 11 text styles and 460+ icons, covering everything from buttons and tables to product-specific patterns like the security catalog. I handed designs off to developers through Zeplin.</p>
+          <p className="text-sm/6 text-muted-foreground lg:text-[16px]/6.5">The design system started from Ant Design, which at the time felt quite angular and rigid. My mission was to use it as a reference and give it our own style. I built it in 2022 and kept evolving it until the end of the project. It grew into a library of 100+ core components and 330+ component sets, with 65 color styles, 11 text styles and 460+ icons, covering everything from buttons and tables to product-specific patterns like the security catalog. I handed designs off to developers through Zeplin.</p>
         </div>
     
         <img src={DesSystem}  alt="" />
@@ -242,7 +242,7 @@ function DevSecToolPage() {
 
           <p className="text-5xl text-secondary ">06.</p>
           <h2 className="text-xl">Outcome</h2>
-          <p className="text-[16px]/6.5 text-muted-foreground">Over four years, I designed the product end to end, from the first concepts to a full web platform covering workspaces, compliance, gap analysis, risk assessment and administration, all built on a design system of 100+ core components.</p>
+          <p className="text-sm/6 text-muted-foreground lg:text-[16px]/6.5">Over four years, I designed the product end to end, from the first concepts to a full web platform covering workspaces, compliance, gap analysis, risk assessment and administration, all built on a design system of 100+ core components.</p>
         </div>
 
         <div id="bento" className="grid w-full grid-cols-2 gap-[4vw] md:gap-6">
@@ -252,7 +252,7 @@ function DevSecToolPage() {
         </div>
 
         <div className="w-full flex flex-col gap-2">
-        <p className="text-[16px]/6.5 text-muted-foreground">Note: The bank's contract ended in 2025 and the source code was handed over to them, so the product is no longer in active development.</p>
+        <p className="text-sm/6 text-muted-foreground lg:text-[16px]/6.5">Note: The bank's contract ended in 2025 and the source code was handed over to them, so the product is no longer in active development.</p>
         <h3 className="text-xl">Thanks for reading!</h3>
         </div>
         
