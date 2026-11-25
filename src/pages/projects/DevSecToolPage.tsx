@@ -141,7 +141,7 @@ function DevSecToolPage() {
       </section>
 
       {/* section 04 */}
-      <section id="04" className="mx-auto flex flex-col pb-16">
+      <section id="04" className="mx-auto flex flex-col pb-16 items-center">
 
         <div className="mx-auto flex flex-col w-full max-w-[1920px]   justify-between px-[5vw] xl:px-36">
 
@@ -164,8 +164,8 @@ function DevSecToolPage() {
 
         </div>
 
-        <div id="columns1" className="flex flex-col gap-8 items-center py-12 lg:flex-row lg:gap-0">
-        <img src={DesSolution1} alt="" className="w-full lg:w-[45%]"/>
+        <div id="columns1" className="flex flex-col gap-8 items-center py-12 lg:flex-row lg:gap-0 mx-auto w-full max-w-[1632px] bg-cover bg-center">
+        <img src={DesSolution1} alt="" className="w-full lg:w-[45%] lg:rounded-r-[24px] lg:border lg:border-border/40 "/>
 
         <div className="px-[5vw] xl:px-36 flex flex-col gap-1 ">
           <h3 className="text-sm font-medium lg:text-base">Information structure</h3>
@@ -178,7 +178,7 @@ function DevSecToolPage() {
 
         </div>
 
-        <div id="columns2" className="flex flex-col-reverse gap-8 items-center py-12 lg:flex-row lg:gap-0">
+        <div id="columns2" className="flex flex-col-reverse gap-8 items-center py-12 lg:flex-row lg:gap-0 mx-auto w-full max-w-[1632px] bg-cover bg-center">
 
         <div className="px-[5vw] xl:px-36 flex flex-col gap-1 ">
           <h3 className="text-sm font-medium lg:text-base">Template reusability</h3>
@@ -188,12 +188,12 @@ function DevSecToolPage() {
           
         </div>
 
-        <img src={DesSolution2} alt="" className="w-full lg:w-[45%]"/>
+        <img src={DesSolution2} alt="" className="w-full lg:w-[45%] lg:rounded-l-[24px] lg:border lg:border-border/40"/>
 
         </div>
 
-        <div id="columns3" className="flex flex-col gap-8 items-center py-12 lg:flex-row lg:gap-0">
-        <img src={DesSolution3} alt="" className="w-full lg:w-[45%]"/>
+        <div id="columns3" className="flex flex-col gap-8 items-center py-12 lg:flex-row lg:gap-0 mx-auto w-full max-w-[1632px] bg-cover bg-center">
+        <img src={DesSolution3} alt="" className="w-full lg:w-[45%] lg:rounded-r-[24px] lg:border lg:border-border/40"/>
 
         <div className="px-[5vw] xl:px-36 flex flex-col gap-1 ">
           <h3 className="text-sm font-medium lg:text-base">Control & Traceability</h3>
@@ -246,9 +246,9 @@ function DevSecToolPage() {
         </div>
 
         <div id="bento" className="grid w-full grid-cols-2 gap-[4vw] md:gap-6">
-          <img src={FinalVisuals1} alt="" className="col-span-2 w-full rounded-lg" />
-          <img src={FinalVisuals2} alt="" className="w-full rounded-lg" />
-          <img src={FinalVisuals3} alt="" className="w-full rounded-lg" />
+          <img src={FinalVisuals1} alt="" className="col-span-2 w-full rounded-sm lg:rounded-lg" />
+          <img src={FinalVisuals2} alt="" className="w-full rounded-sm lg:rounded-lg" />
+          <img src={FinalVisuals3} alt="" className="w-full rounded-sm lg:rounded-lg" />
         </div>
 
         <div className="w-full flex flex-col gap-2">
