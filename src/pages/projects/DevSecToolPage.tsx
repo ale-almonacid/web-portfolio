@@ -76,7 +76,7 @@ function DevSecToolPage() {
 
         <div className="flex flex-col gap-1">
 
-          <p className="text-5xl text-secondary ">01.</p>
+          <p className="text-5xl text-secondary pb-2">01.</p>
           <h2 className="text-xl">Background</h2>
           <h3 className="text-sm font-medium lg:text-base">A product meant for information security officers in the banking sector.</h3>
           <p className="text-sm/6 text-muted-foreground lg:text-[16px]/6.5">Every digital product a bank builds must follow security requirements from standards like ISO 27001, regulators and internal policies. To achieve this, the usual workflow is the following: security officers decide which requirements apply, developers implement them, and officers check that everything is in place, often before an audit or certification.</p>
@@ -84,11 +84,17 @@ function DevSecToolPage() {
     
         <ProcessFlow steps={workflowSteps}/>
 
-        <div id="CTA-challenge" className="dark p-4 bg-bluegray-900 rounded-md flex flex-col gap-1">
+        <div id="CTA-challenge" className="dark p-4 bg-bluegray-900 rounded-md flex flex-col gap-3">
           <Swords className="text-sky-accent"></Swords>
+
+          <div className="flex flex-col gap-1">
+
+          <div className="fle flex-col gap-0">
           <h2 className="text-xl text-foreground">My challenge</h2>
           <h3 className="text-sm font-medium text-foreground lg:text-base">Understanding users in a technical, unfamiliar field (information security)</h3>
+          </div>
           <p className="text-sm/6 text-muted-foreground lg:text-[16px]/6.5">Before joining, I had no background in information security. I learned the workflow from our security specialist and the bank's stakeholders in feedback meetings, to identify the users, their needs, workflows and constraints.</p>
+          </div>
 
         </div>
         
@@ -108,7 +114,7 @@ function DevSecToolPage() {
 
         <div className="flex flex-col gap-2">
 
-        <p className="text-5xl text-secondary ">02.</p>
+        <p className="text-5xl text-secondary pb-2">02.</p>
         <h2 className="text-xl">Pain points definition (problem)</h2>
         <ol className="list-decimal pl-6 text-sm/6 text-muted-foreground lg:text-[16px]/6.5 marker:font-semibold">
           <li><span className="font-semibold">Decentralised documentation.</span> Requirements were spread across thousands of files.</li>
@@ -124,7 +130,7 @@ function DevSecToolPage() {
         </div>
 
         <div className="flex flex-col gap-2">
-        <p className="text-5xl text-secondary ">03.</p>
+        <p className="text-5xl text-secondary pb-2">03.</p>
         <h2 className="text-xl">Scope definition (solution)</h2>
         <ol className="list-decimal pl-6 text-sm/6 text-muted-foreground lg:text-[16px]/6.5 marker:font-semibold">
           <li><span className="font-semibold">One platform.</span> All requirements, owners and progress in one place.</li>
@@ -155,7 +161,7 @@ function DevSecToolPage() {
 
         <div className="flex flex-col gap-1">
 
-          <p className="text-5xl text-secondary ">04.</p>
+          <p className="text-5xl text-secondary pb-2">04.</p>
           <h2 className="text-xl">Design decisions</h2>
           <p className="text-sm/6 text-muted-foreground lg:text-[16px]/6.5">As the founding product designer, my role was also deeply conceptual. I had to understand what security officers actually do, what they need, and the patterns they already rely on. Here are a few of the design decisions that came out of that.</p>
         </div>
@@ -219,7 +225,7 @@ function DevSecToolPage() {
 
         <div className="flex flex-col gap-1">
 
-          <p className="text-5xl text-secondary ">05.</p>
+          <p className="text-5xl text-secondary pb-2">05.</p>
           <h2 className="text-xl">Design system</h2>
           <p className="text-sm/6 text-muted-foreground lg:text-[16px]/6.5">The design system started from Ant Design, which at the time felt quite angular and rigid. My mission was to use it as a reference and give it our own style. I built it in 2022 and kept evolving it until the end of the project. It grew into a library of 100+ core components and 330+ component sets, with 65 color styles, 11 text styles and 460+ icons, covering everything from buttons and tables to product-specific patterns like the security catalog. I handed designs off to developers through Zeplin.</p>
         </div>
@@ -241,7 +247,7 @@ function DevSecToolPage() {
 
         <div className="flex flex-col gap-1">
 
-          <p className="text-5xl text-secondary ">06.</p>
+          <p className="text-5xl text-secondary pb-2">06.</p>
           <h2 className="text-xl">Outcome</h2>
           <p className="text-sm/6 text-muted-foreground lg:text-[16px]/6.5">Over four years, I designed the product end to end, from the first concepts to a full web platform covering workspaces, compliance, gap analysis, risk assessment and administration, all built on a design system of 100+ core components.</p>
         </div>
@@ -252,7 +258,7 @@ function DevSecToolPage() {
           <img src={FinalVisuals3} alt="" className="w-full rounded-sm lg:rounded-lg" />
         </div>
 
-        <div className="w-full flex flex-col gap-2">
+        <div className="w-full flex flex-col gap-4">
         <p className="text-sm/6 text-muted-foreground lg:text-[16px]/6.5">Note: The bank's contract ended in 2025 and the source code was handed over to them, so the product is no longer in active development.</p>
         <h3 className="text-xl">Thanks for reading!</h3>
         </div>
