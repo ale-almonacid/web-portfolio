@@ -30,6 +30,9 @@
   --color-bluegray-800: #303E48;
   --color-bluegray-900: #181F24;
   --color-bluegray-950: #0C1012;
+
+  /* accents */
+  --color-sky-accent: #97BDF6;
 }
 
 /* 3. Semantic -> Tailwind classes */
