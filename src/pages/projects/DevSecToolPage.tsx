@@ -8,6 +8,7 @@ import CardCTA from "@/components/CardCTA"
 import NextProjectCard from "@/components/NextProjectCard"
 import ProcessFlow, { type ProcessStep } from "@/components/ProcessFlow"
 import LottieOnScroll from "@/components/LottieOnScroll"
+import VideoOnScroll from "@/components/VideoOnScroll"
 
 //icons
 import { Swords } from 'lucide-react'
@@ -20,6 +21,7 @@ import DeliverablesIcon from "@/assets/devsectool-assets/deliverables.svg"
 import SecondaryUserIcon from "@/assets/devsectool-assets/secondary-user.svg"
 import DesSolution1 from "@/assets/devsectool-assets/04-1.png"
 import Illustration1 from "@/assets/devsectool-assets/illustration1.lottie?url"
+import Illustration2 from "@/assets/devsectool-assets/illustration2.webm"
 import Visuals1 from "@/assets/devsectool-assets/visuals1.png"
 import DesSolution2 from "@/assets/devsectool-assets/04-2.png"
 import DesSolution3 from "@/assets/devsectool-assets/04-3.png"
@@ -193,7 +195,7 @@ function DevSecToolPage() {
           <h3 className="text-sm font-medium lg:text-base">Template reusability</h3>
           <p className="text-sm/6 text-muted-foreground lg:text-[16px]/6.5">After long discussions with the information security officers I worked with, I understood how important reusability was for this product. The same recommendations apply to many products and assets, and officers already had their own templates. So we added a template builder: every product or asset in the platform is built from a template, like a master component in Figma with its instances.</p>
 
-           <img src={Visuals1} alt="" className="w-full pt-10 lg:w-4/5" />
+           <VideoOnScroll src={Illustration2} className="lg:mt-10 aspect-[533/291] w-full lg:w-4/4" />
           
         </div>
 
