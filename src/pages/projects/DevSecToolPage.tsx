@@ -22,7 +22,7 @@ import SecondaryUserIcon from "@/assets/devsectool-assets/secondary-user.svg"
 import DesSolution1 from "@/assets/devsectool-assets/04-1.png"
 import Illustration1 from "@/assets/devsectool-assets/illustration1.lottie?url"
 import Illustration2 from "@/assets/devsectool-assets/illustration2.webm"
-import Visuals1 from "@/assets/devsectool-assets/visuals1.png"
+import Illustration3 from "@/assets/devsectool-assets/illustration3.png"
 import DesSolution2 from "@/assets/devsectool-assets/04-2.png"
 import DesSolution3 from "@/assets/devsectool-assets/04-3.png"
 import DesSystem from "@/assets/devsectool-assets/design-system.png"
@@ -182,7 +182,7 @@ function DevSecToolPage() {
           <h3 className="text-sm font-medium lg:text-base">Information structure</h3>
           <p className="text-sm/6 text-muted-foreground lg:text-[16px]/6.5">Instead of keeping the requirements as plain text, the information was structured as connected objects to preserve their dependencies. My contribution was suggesting a collapsible tree as the best way to show the relations between objects and give a quick overview, plus distinct icons for each object type, for easier recognition at a glance.</p>
 
-           <LottieOnScroll src={Illustration1} className="lg:mt-10 aspect-[657/502] w-full lg:w-4/5" />
+           <LottieOnScroll src={Illustration1} className="self-center md:self-start lg:mt-10 aspect-[657/502] w-full lg:w-4/5" />
           
         </div>
 
@@ -195,7 +195,7 @@ function DevSecToolPage() {
           <h3 className="text-sm font-medium lg:text-base">Template reusability</h3>
           <p className="text-sm/6 text-muted-foreground lg:text-[16px]/6.5">After long discussions with the information security officers I worked with, I understood how important reusability was for this product. The same recommendations apply to many products and assets, and officers already had their own templates. So we added a template builder: every product or asset in the platform is built from a template, like a master component in Figma with its instances.</p>
 
-           <VideoOnScroll src={Illustration2} className="mt-4 lg:mt-10 aspect-[533/291] w-[105%] lg:w-4/4" />
+           <VideoOnScroll src={Illustration2} className="self-center md:self-start mt-4 lg:mt-10 aspect-[533/291] w-[105%] lg:w-4/4" />
           
         </div>
 
@@ -210,7 +210,7 @@ function DevSecToolPage() {
           <h3 className="text-sm font-medium lg:text-base">Control & Traceability</h3>
           <p className="text-sm/6 text-muted-foreground lg:text-[16px]/6.5">Thanks to the tree structure and the template logic, officers no longer copy and paste the same paragraphs for every similar asset. Instead, they review the template base and switch off what doesn't apply, one requirement at a time or a whole chapter at once by toggling its parent object. My contribution here was the on/off toggle mechanism.</p>
 
-           <img src={Visuals1} alt="" className="w-full pt-10 lg:w-4/5" />
+           <img src={Illustration3} alt="" className="self-center md:self-start w-4/5 pt-5 lg:pt-10 lg:w-4/7" />
           
         </div>
 
