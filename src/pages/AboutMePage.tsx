@@ -48,7 +48,7 @@ function AboutMePage() {
 
           <div className="flex flex-col gap-10">
             <h1 className="max-w-2xl text-3xl leading-tight font-normal tracking-[-.04em] text-foreground md:text-4xl">
-              Hi! I’m Alejandra, 5+ experienced Product Designer based in
+              Hi! I’m Alejandra, a Product Designer with 5+ years of experience based in
               Berlin, Germany. Now also building what I design in React.
             </h1>
 
